@@ -1,0 +1,12 @@
+<mat-card (click)="onCardClick()" *ngFor="let oneObject of objectsExample" class="example-card" tabindex="0">
+    <mat-card-header>
+      <mat-card-title>Nombre: {{oneObject.nombre}}</mat-card-title>
+      <mat-card-subtitle>Apellidos: {{oneObject.apellidos}}</mat-card-subtitle>
+      
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        Tarea: {{oneObject.tarea}}
+      </p>
+    </mat-card-content>
+  </mat-card>
